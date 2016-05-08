@@ -10,6 +10,5 @@ var Greeter = (function () {
 }());
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = Greeter;
-//# sourceMappingURL=greeter.js.map 
 
 //# sourceMappingURL=greeter.js.map

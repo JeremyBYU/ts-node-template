@@ -1,9 +1,9 @@
-console.log('test');
 export default class Person {
-  constructor(name) {
-    this.name = name;
+  constructor (name) {
+    this.name = name
   }
-  sayName() {
-    return this.name;
+  sayName () {
+    return this.name
   }
 }
+console.log('test');

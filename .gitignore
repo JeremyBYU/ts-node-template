@@ -1,19 +1,5 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @JeremyBYU
- Watch 1,622
-  Star 36,063
-  Fork 13,738 github/gitignore
- Code  Pull requests 120  Pulse  Graphs
-Branch: master Find file Copy pathgitignore/Node.gitignore
-1f2a637  16 days ago
-@ro31337 ro31337 Add nyc test coverage output directory
-22 contributors @stuartpb @cheddar @arcresu @jucrouzet @Gouthamve @melonmanchan @iamsebastian @joreyaesh @jenrik @izuzak @kerimdzhanov @DerNivel @cyrbil @peat @rsolomo @ro31337 @indexzero @sroberts @aoberoi @pronebird @amrnt @aroben
-RawBlameHistory     38 lines (27 sloc)  578 Bytes
+# Build
+build/
 # Logs
 logs
 *.log
@@ -46,10 +32,5 @@ build/Release
 node_modules
 jspm_packages
 
-# Optional npm cache directory
-.npm
-
 # Optional REPL history
 .node_repl_history
-Status API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help

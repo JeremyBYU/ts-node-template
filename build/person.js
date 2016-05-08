@@ -1,5 +1,4 @@
 "use strict";
-console.log('test');
 var Person = (function () {
     function Person(name) {
         this.name = name;
@@ -11,5 +10,6 @@ var Person = (function () {
 }());
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = Person;
+console.log('test');
 
 //# sourceMappingURL=person.js.map

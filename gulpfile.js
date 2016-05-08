@@ -1,8 +1,8 @@
-var gulp = require('gulp');
-var del = require('del');
-var ts = require('gulp-typescript');
-var sourcemaps = require('gulp-sourcemaps');
-var nodemon = require('gulp-nodemon');
+var gulp = require('gulp')
+var del = require('del')
+var ts = require('gulp-typescript')
+var sourcemaps = require('gulp-sourcemaps')
+var nodemon = require('gulp-nodemon')
 
 // Typescript Compiling Options, Copy from tsconfig.json
 var tsOptions = {
@@ -28,16 +28,15 @@ gulp.task('build', ['clean'], ()=> {
     .pipe(gulp.dest(buildFolder));
 });
 
-gulp.task('watch', ['build'], function() {
-    gulp.watch(buildSrc, ['build']);
-});
-
-gulp.task('start', ['watch'],function () {
-  nodemon({
-    script: buildFolder + '/app.js',
-    nodeArgs: ['--debug'],
-    ext: 'js html',
-    env: { 'NODE_ENV': 'development' }
-  })
+gulp.task('start', ['build'], function () {
+  var stream = nodemon({
+    script: buildFolder + '/app.js', // run ES5 code
+    watch: buildSrc, // watch ES2015 & Typescript code
+    tasks: ['build'] // compile synchronously onChange
+    })
+  return stream;
 })
+
+// For some reason the server restarts twice...super annoying...
+
 

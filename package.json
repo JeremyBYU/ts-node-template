@@ -9,10 +9,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^6.0.4",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
+    "gulp-file-cache": "0.0.1",
     "gulp-nodemon": "^2.0.6",
     "gulp-sourcemaps": "git://github.com/floridoo/gulp-sourcemaps.git#a626896c7660114680ecf998394bda87004c08e1",
-    "gulp-typescript": "^2.13.3"
+    "gulp-typescript": "^2.13.3",
+    "standard": "^7.0.1"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "gulpfile.js"
+    ]
   }
 }
