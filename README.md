@@ -7,6 +7,14 @@ It also shows the power of using visual studio code for intellisense between the
 two languages. In addition gulp is used for traspilation and source map creating.
 Debugging works seamlessly between the 
 
+## Setup
+
+```
+git clone
+npm install
+typings install
+
+```
 
 ## Running
 Command Line: 

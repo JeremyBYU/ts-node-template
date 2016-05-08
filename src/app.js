@@ -1,5 +1,5 @@
 
-import * as express from 'express' // Watch Intellisense go to work in VS Code
+import * as express from 'express' // Watch Intellisense go to work in VS Code!
 import Person from './person' // Javascript Class
 import Greeter from './greeter/greeter' // Typescript Class
 
@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.listen(3000, () => {
-  console.log('Example app listening on port 3000!')
+  console.log('Typescript and Javascript ready on port 3000!')
 })
 
 
