@@ -32,7 +32,8 @@ gulp.task('start', ['build'], function () {
     script: buildFolder + '/app.js', // run ES5 code
     watch: buildSrc, // watch ES2015 & Typescript code
     tasks: ['build'], // compile synchronously onChange
-    ext: 'js ts'
+    ext: 'js ts',
+    nodeArgs: ['--debug']
     })
   return stream;
 })
