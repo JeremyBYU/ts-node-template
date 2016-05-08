@@ -1,0 +1,18 @@
+{
+  "name": "greeter",
+  "version": "1.0.0",
+  "description": "This sample shows basic class definition and instantiation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-sourcemaps": "git://github.com/floridoo/gulp-sourcemaps.git#a626896c7660114680ecf998394bda87004c08e1",
+    "gulp-typescript": "^2.13.3"
+  }
+}
