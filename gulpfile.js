@@ -14,7 +14,6 @@ var tsOptions = {
 var buildSrc = 'src/**/*'; // Where source files are held
 var buildFolder = './build'; // Where build files will be run
 
-
 gulp.task('clean', () => {
   return del(buildFolder)
 });

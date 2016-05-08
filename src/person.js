@@ -6,4 +6,3 @@ export default class Person {
     return this.name
   }
 }
-console.log('test');
