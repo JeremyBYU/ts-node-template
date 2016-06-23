@@ -4,7 +4,16 @@
   "description": "This sample shows basic class definition and instantiation.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf build",
+    "prebuild": "npm run clean",
+    "build:ts": "tsc",
+    "build": "run-p build:*",
+    "watch:ts": "npm run build:ts -- -w",
+    "watch": "run-p watch:*",
+    "server": "nodemon build/app.js -w build",
+    "prestart": "npm run build -s",
+    "start": "run-p -s watch server"
   },
   "author": "",
   "license": "ISC",
@@ -15,13 +24,10 @@
     "gulp-nodemon": "^2.0.6",
     "gulp-sourcemaps": "git://github.com/floridoo/gulp-sourcemaps.git#a626896c7660114680ecf998394bda87004c08e1",
     "gulp-typescript": "^2.13.3",
-    "standard": "^7.0.1"
-  },
-  "standard": {
-    "parser": "babel-eslint",
-    "ignore": [
-      "gulpfile.js"
-    ]
+    "nodemon": "^1.9.2",
+    "npm-run-all": "^2.2.0",
+    "rimraf": "^2.5.2",
+    "typescript": "^1.8.10"
   },
   "dependencies": {
     "express": "^4.13.4"
