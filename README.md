@@ -1,10 +1,10 @@
-# TypeScript Sample: Greeter 
+# NodeJS Typescript Starter
 
 ## Overview 
 
 This sample shows the basics of using Typescript *and* javascript together.
 It also shows the power of using visual studio code for intellisense between the
-two languages. 
+two languages. It installs the basic dependencies for a project and uses the `typings` repository.
 
 ## Setup
 
