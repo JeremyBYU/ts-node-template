@@ -4,12 +4,12 @@
     "module": "commonjs",
     "sourceMap": true,
     "allowJs": true,
-    "rootDir": "./src",
+    //"rootDir": "./src",
     "outDir": "./build"
   },
+  "include":[ "src/**/*"],
   "exclude": [
     "node_modules", 
-    "build",
-    "./*"
+    "build"
   ]
 }
